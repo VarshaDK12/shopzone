@@ -44,3 +44,20 @@
 button{
   background:#091f3b;
 }
+
+@media(max-width: 768px){
+  .box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+  }
+nav .brand-logo{
+  left: 20%;
+}
+.card{
+  display: block;
+  align-items: center;
+  width: 400px;
+  margin: 15px 50px;
+}
+}
