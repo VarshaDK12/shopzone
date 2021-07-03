@@ -5,15 +5,15 @@ import { removeItem,addQuantity,subtractQuantity} from './actions/cartActions'
 import Recipe from './Recipe'
 class Cart extends Component{
 
-    //to remove the item completely
+    
     handleRemove = (id)=>{
         this.props.removeItem(id);
     }
-    //to add the quantity
+    
     handleAddQuantity = (id)=>{
         this.props.addQuantity(id);
     }
-    //to substruct from the quantity
+    
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
     }
