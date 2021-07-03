@@ -1,40 +1,5 @@
-import Item1 from '../../images/item1.jpg'
-import Item2 from '../../images/item2.jpg'
-import Item3 from '../../images/item3.jpg'
-import Item4 from '../../images/item4.jpg'
-import Item5 from '../../images/item5.jpg'
-import Item6 from '../../images/item6.jpg'
-import Item7 from '../../images/item7.jpg'
-import Item8 from '../../images/item8.jpg'
-import Item9 from '../../images/item9.jpg'
-import Item10 from '../../images/item10.jpg'
-import Item11 from '../../images/item11.jpg'
-import Item12 from '../../images/item12.jpg'
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '../actions/action-types/cart-actions'
-
-const initState = {
-    items: [
-        {id:1,title:'Geneva', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img: Item1},
-        {id:2,title:'Letscom', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:75,img: Item2},
-        {id:3,title:'Tagg Verve', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:100,img: Item3},
-        {id:4,title:'SBS', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:200,img: Item4},
-        {id:5,title:'Ferret', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:85,img: Item5},
-        {id:6,title:'Lvvkee', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:125,img: Item6},
-        {id:7,title:'Winter body', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:110,img:Item7},
-        {id:8,title:'Adidas', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80,img: Item8},
-        {id:9,title:'Vans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:120,img: Item9},
-        {id:10,title:'White', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:260,img:Item10},
-        {id:11,title:'Cropped-sho', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:160,img: Item11},
-        {id:12,title:'Blues', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img: Item12}
-
-    ],
-    addedItems:[],
-    total: 0
-
-}
-const cartReducer= (state = initState,action)=>{
-    
-    return state;
-
-}
-export default cartReducer;
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+export const SUB_QUANTITY = 'SUB_QUANTITY';
+export const ADD_QUANTITY = 'ADD_QUANTITY';
+export const ADD_SHIPPING = 'ADD_SHIPPING';
